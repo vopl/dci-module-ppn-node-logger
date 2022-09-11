@@ -355,7 +355,7 @@ namespace dci::module::ppn::node
             };
             traverse({}, config::cnvt(std::move(config)));
 
-            return cmt::readyFuture<>();
+            return cmt::readyFuture(None{});
         };
     }
 
